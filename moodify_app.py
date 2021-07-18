@@ -103,7 +103,7 @@ def main():
     st.sidebar.title("Explore the Following")
 
     app_mode = st.sidebar.selectbox("Please select from the following", SIDEBAR_OPTIONS)
-    st.markdown("""<p>Before proceeding, please go to <a href='https://developer.spotify.com/console/get-recently-played/'>this</a> website, click on get token and click on 'user-recently-played' and 'playlist-modify-private' to generate token. Paste the obtained OAuth Token here </p>""", unsafe_allow_html=True)
+    st.markdown("""<p>Before proceeding, please go to <a href='https://developer.spotify.com/console/get-recently-played/' target="_blank">this</a> website, click on get token and click on 'user-recently-played' and 'playlist-modify-private' to generate token. Paste the obtained OAuth Token here </p>""", unsafe_allow_html=True)
     token = st.text_input("Access token: ")
     if app_mode == SIDEBAR_OPTION_PROJECT_INFO:
         st.sidebar.write(" ------ ")
